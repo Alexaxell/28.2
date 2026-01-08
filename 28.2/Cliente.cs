@@ -13,6 +13,8 @@ namespace _28._2
         public string CodiceFiscale { get; set; }
         public double Stipendio { get; set; }
 
+        public Cliente() { }
+
         public Cliente(string nome, string cognome, string codiceFiscale, double stipendio)
         {
             Nome = nome;

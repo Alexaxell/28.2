@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace _28._2
 {
@@ -12,7 +13,10 @@ namespace _28._2
         public double Rata { get; set; }
         public DateTime DataInizio { get; set; }
         public DateTime DataFine { get; set; }
+        [XmlIgnore]
         public Cliente Intestatario { get; set; }
+
+        public Prestito() { }
 
         public Prestito(double ammontare, double rata, DateTime dataInizio, DateTime dataFine, Cliente intestatario)
         {

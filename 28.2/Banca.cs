@@ -4,10 +4,11 @@ namespace _28._2
 {
     public class Banca
     {
-        public string Nome { get; set; }
-        public List<Cliente> Clienti { get; set; }
-        [XmlIgnore]
+        public string Nome { get; set; }        
+        public List<Cliente> Clienti { get; set; }        
         public List<Prestito> Prestiti { get; set; }
+
+        public Banca() { }
 
         public Banca(string nome)
         {
