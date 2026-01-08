@@ -1,9 +1,12 @@
-﻿namespace _28._2
+﻿using System.Xml.Serialization;
+
+namespace _28._2
 {
     public class Banca
     {
         public string Nome { get; set; }
         public List<Cliente> Clienti { get; set; }
+        [XmlIgnore]
         public List<Prestito> Prestiti { get; set; }
 
         public Banca(string nome)
